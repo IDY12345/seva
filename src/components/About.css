@@ -1,0 +1,31 @@
+.About1 {
+    background-image: url("C:\Users\HP\OneDrive\Desktop\Home\seva\public\assets\back.jpg");
+    width: 100%;
+    height: 633px;
+    color: white;
+}
+
+.info {
+    color: white;
+    font-size: 50px;
+}
+
+.sevalogo {
+    justify-content: center;
+    height: 125px;
+    animation-name: example;
+}
+
+@keyframes example {}
+
+.SEVA {
+    font-size: 60px;
+    color: rgba(13, 104, 194, 255);
+}
+
+@media screen and (max-width:768px) {
+    .About1
+    {
+        display: none;
+    }
+}

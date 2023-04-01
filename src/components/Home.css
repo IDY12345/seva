@@ -1,0 +1,230 @@
+/* .Main {
+    width: 100%;
+    height: 633px;
+    background-image: url("C:\Users\HP\OneDrive\Desktop\Home\seva\public\assets\back.jpg");
+    background-color: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: absolute;
+    image-resolution: 300dpi;
+} */
+
+/* .Name1 {
+    margin-top: 202px;
+    font-size: 50px;
+    color: white;
+    height: 52px;
+    width: 835px;
+}
+
+.subname1 {
+
+    font-size: 37px;
+    color: white;
+}
+
+.customer:hover {
+    opacity: 60%;
+}
+
+.customer {
+
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    background-color: rgba(13, 104, 194, 255);
+    background-image: linear-gradient(black, rgba(13, 104, 194, 255), black);
+    border-color: none;
+    cursor: pointer;
+    border-radius: 00%;
+    color: white;
+}
+
+.pipe {
+    margin-top: 216px;
+    display: flex;
+    height: 60%;
+    left: 0;
+}
+
+.image {
+    display: flex;
+    /* justify-content: center;
+    width: 100%;
+    left: 0;
+}
+
+.Complete-Name {
+    display: flex;
+    flex-direction: column;
+    margin-left: 120px;
+    margin-right: 40px;
+}
+
+.Tanks {
+    display: flex;
+    width: 100%;
+    height: 40%;
+    margin-top: 355px; 
+}
+
+.Tank-div
+{
+    margin-left: 45px;
+} */
+
+/* .Home1-sidebar
+{
+    background-image: url("C:\Users\HP\OneDrive\Desktop\Home\seva\public\assets\back.jpg");
+    width: 70%;
+    right:30%;
+    background-color: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: absolute;
+    image-resolution: 300dpi;
+    height: 72vh;
+}
+
+.Name2
+{
+    color: white;
+} */
+
+
+.Main
+{
+    width: 100%;
+    height: 633px;
+    background-image: url("C:\Users\HP\OneDrive\Desktop\Home\seva\public\assets\back.jpg");
+    background-color: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: absolute;
+    image-resolution: 300dpi;
+    display: flex;
+}
+
+.Name1
+{
+    color:whitesmoke;
+    font-size: 50px;
+    width: 1000px;
+}
+
+.Subname1
+{
+    color: whitesmoke;
+    font-size: 40px;
+}
+
+.Customer-Portal1
+{
+
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    /* background-color: rgba(13, 104, 194, 255); */
+    background-image: linear-gradient(black, rgba(13, 104, 194, 255), black);
+    border: none;
+    cursor: pointer;
+    color: white;
+    transition: 0.4s;
+    border-radius: 10px;
+}
+
+.Customer-Portal1:hover {
+    opacity: 60%;
+    width: 210px;
+    height: 60px;
+    transition: 0.4s;
+    font-size: 22px;
+}
+
+.Pipes
+{
+    margin-top: 221px;
+}
+.Pipes1
+{
+    width: 50%;
+    height: 50%;
+    margin-top: 313.4px;
+}
+
+.Pipe
+{
+    width: 100%;
+    height: 100%;
+}
+
+.Firm
+{
+    margin-top: 100px;
+}
+
+.Inner-Main
+{
+    background-color: black;
+    left: 0%;
+    width: 100%;
+    height: 92vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: absolute;
+    image-resolution: 300dpi;
+}
+
+.Inner-Main.active
+{
+    background-image: url("C:\Users\HP\OneDrive\Desktop\Home\seva\public\assets\back.jpg");
+    left: 30%;
+    width: 70%;
+}
+
+.Checked
+{
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+.Sidebar-Name
+{
+    font-size: 20px;
+    color: whitesmoke;
+}
+.Sidebar-Subname
+{
+    font-size: 18px;
+    color: whitesmoke;
+}
+@media screen and (max-width:1600px) {
+    .Complete-Name
+    {
+        margin-left: 30px;
+        margin-right: 40px;
+    }
+
+    .Main-sidebar
+    {
+        display: none;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .Main {
+        display: none;
+    }
+
+    .Main-sidebar{
+        display: contents;
+    }
+}

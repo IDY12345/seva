@@ -1,0 +1,26 @@
+.Portal1
+{
+    background-image: url("C:\Users\HP\OneDrive\Desktop\Home\seva\public\assets\back.jpg");
+    width: 100%;
+    height: 633px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: absolute;
+    image-resolution: 300dpi;
+}
+
+.Customer1
+{
+    color: white;
+    font-size: 35px;
+}
+
+@media screen and (max-width:768px) {
+    .Portal1
+    {
+        display: none;
+    }
+    
+}

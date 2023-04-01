@@ -1,38 +1,323 @@
 .App {
   text-align: center;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
+  background-color: black;
+  height: 80px;
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  /* justify-content: center; */
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  color: white;
+  text-decoration: none;
+}
+
+.logo {
+  margin-top: 20px;
+  height: 60px;
+}
+
+.FirmName {
+  color: rgba(13, 104, 194, 255);
+  display: flex;
+}
+
+.Name {
+  font-size: 25px;
+  width: 50px;
+  margin-left: 25px;
+}
+
+.Home {
+  color: white;
+  margin-left: 230px;
+  font-size: 20px;
+  background-color: transparent;
+  transition: 0.7s;
+  border: none;
+} 
+
+.Home:hover {
+  outline-color: transparent;
+  outline-style: solid;
+  box-shadow: 0 0 0 2px white;
+  cursor: pointer;
+  transition: 0.7s;
+  color: rgba(13, 104, 194, 255);
+}
+
+.About {
+  color: white;
+  margin-left: 50px;
+  font-size: 20px;
+  background-color: transparent;
+  transition: 0.7s;
+  border: none;
+}
+
+.About:hover {
+  outline-color: transparent;
+  outline-style: solid;
+  box-shadow: 0 0 0 2px white;
+  cursor: pointer;
+  transition: 0.7s;
+  color: rgba(13, 104, 194, 255);
+}
+
+.Contact {
+  color: white;
+  margin-left: 50px;
+  font-size: 20px;
+  background-color: transparent;
+  transition: 0.7s;
+  border: none;
+}
+
+.Contact:hover {
+  outline-color: transparent;
+  outline-style: solid;
+  box-shadow: 0 0 0 2px white;
+  cursor: pointer;
+  transition: 0.7s;
+  color: rgba(13, 104, 194, 255);
+}
+
+.Portal {
+  color: white;
+  margin-left: 30px;
+  font-size: 20px;
+  width: 200px;
+  background-color: transparent;
+  transition: 0.7s;
+  border: none;
+}
+
+.Portal:hover {
+  outline-color: transparent;
+  outline-style: solid;
+  box-shadow: 0 0 0 2px white;
+  cursor: pointer;
+  transition: 0.7s;
+  color: rgba(13, 104, 194, 255);
+}
+
+.social {
+  margin-left: 9px;
+  display: flex;
+  width: 300px;
+  background-color: black;
+  justify-content: space-around;
+}
+
+#instagram {
+
+  margin-top: 10px;
+  color: rgba(13, 104, 194, 255);
+}
+
+#linkedin {
+  margin-top: 10px;
+
+  color: rgba(13, 104, 194, 255);
+}
+
+#twitter {
+  margin-top: 10px;
+
+  color: rgba(13, 104, 194, 255);
+  margin-right: 25px;
+}
+
+.search {
+  height: 25px;
+  /* background-color: rgba(72,133,189,255); */
+  background-color: transparent;
+  border: black;
+  margin-top: 27px;
+  width: 150px;
+  font-weight: bold;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.search-support {
+
+  margin-left: 40px;
+  width: 250px;
+  display: flex;
+  border: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#icon {
+  color: white;
+  margin-right: 10px;
+  margin-top: 10px;
 }
+
+.btn-Firmname {
+  background-color: black;
+  width: 120px;
+  cursor: pointer;
+  height: 70px;
+}
+
+.nav1 {
+  width: 100%;
+  background-color: black;
+  height: 50px;
+  display: flex;
+}
+
+.mobile-view {
+  background-color: black;
+  width: 30%;
+  height: 100%;
+}
+
+.bars {
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.Close {
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.sidebar {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 92vh;
+  left: -100%;
+  position: absolute;
+  transition: 0.3s all ease-in-out;
+}
+
+.sidebar.active {
+  left: 0%;
+}
+
+.Sidebar-link {
+  display: flex;
+  flex-direction: column;
+}
+
+.Home-sidebar {
+  background-color: black;
+  border: none;
+  color: white;
+  height: 3rem;
+  width: 100%;
+  cursor: pointer;
+  font-weight: 900;
+  font-size: 15px;
+}
+
+.About-sidebar {
+  height: 3rem;
+  background-color: black;
+  border: none;
+  color: white;
+  width: 100%;
+  cursor: pointer;
+  font-weight: 900;
+  font-size: 15px;
+}
+
+.Contact-sidebar {
+  height: 3rem;
+  background-color: black;
+  border: none;
+  color: white;
+  width: 100%;
+  cursor: pointer;
+  font-weight: 900;
+  font-size: 15px;
+}
+
+.Portal-sidebar {
+  width: 100%;
+  height: 3rem;
+  background-color: black;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-weight: 900;
+  font-size: 15px;
+}
+
+.social-sidebar {
+  background-color: black;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+}
+
+#instagram1 {
+  color: rgba(13, 104, 194, 255);
+}
+
+#linkedin1 {
+  color: rgba(13, 104, 194, 255);
+}
+
+#twitter1 {
+  color: rgba(13, 104, 194, 255);
+}
+
+.insta-div:hover {
+  background-color: yellow;
+  transition: 0.7s;
+}
+
+.linked-div:hover {
+  background-color: yellow;
+  transition: 0.7s;
+}
+
+.twitter-div:hover {
+  background-color: yellow;
+  transition: 0.7s;
+}
+
+@media screen and (768px<= width <=1600px) {
+  .bars {
+    display: none;
+  }
+
+  .nav1 {
+    display: none;
+  }
+
+}
+
+@media screen and (width<=768px) {
+
+  .navbar {
+    display: none;
+  }
+
+  .nav-main {
+    display: contents;
+  }
+
+}
+
+/* @media screen and (max-width:768px) {
+  .navbar {
+    display: none;
+  }
+  .nav1
+  {
+    display: contents;
+  }
+} */
