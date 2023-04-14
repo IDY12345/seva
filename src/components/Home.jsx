@@ -2,7 +2,8 @@ import React,{useEffect,useState} from 'react'
 import './Home.css'
 import { Link} from 'react-router-dom'
 import { motion } from 'framer-motion'
-function Home() {
+function Home(sidebar) {
+  let sidebar1=sidebar;
   const [mobile, setMobile] = useState(false);
   console.log();
     useEffect(() => {
@@ -43,12 +44,15 @@ function Home() {
       </motion.div>
       )}
       {
+
         mobile &&(
           <div className="Main-sidebar">
-            <div className={  "Inner-Main active"}>
+            <div className={sidebar1 ? "Inner-Main active" : "Inner-Main1"}>
+              {console.log(sidebar1)}
               <p className="Checked"></p>
               <p className="Sidebar-Name">DELIVERS ELITE PLUMBING SERVICES</p>
               <p className="Sidebar-Subname">to businesses and home owners</p>
+              <Link to="/Portal"><button className='Sidebar-Portal-Name'>Customer-Portal</button></Link>
             </div>
           </div>
         )

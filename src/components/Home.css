@@ -169,11 +169,17 @@
     margin-top: 100px;
 }
 
+.Main-sidebar
+{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+}
+
 .Inner-Main
 {
-    background-color: black;
-    left: 0%;
-    width: 100%;
+    left: -30%;
+    width: 70%;
     height: 92vh;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -181,13 +187,25 @@
     background-size: cover;
     position: absolute;
     image-resolution: 300dpi;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
 }
+
+/* .Inner-Main1
+{
+    background-image: url("C:\Users\HP\OneDrive\Desktop\Home\seva\public\assets\back.jpg");
+    left: 30%;
+    width: 100%;
+} */
 
 .Inner-Main.active
 {
     background-image: url("C:\Users\HP\OneDrive\Desktop\Home\seva\public\assets\back.jpg");
-    left: 30%;
-    width: 70%;
+    left: 00%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
 }
 
 .Checked
@@ -205,6 +223,17 @@
 {
     font-size: 18px;
     color: whitesmoke;
+}
+
+.Sidebar-Portal-Name
+{
+    border: none;
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
 }
 @media screen and (max-width:1600px) {
     .Complete-Name

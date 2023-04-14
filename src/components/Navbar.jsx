@@ -3,6 +3,32 @@ import { useState, React, useEffect } from 'react'
 import { BrowserRouter as Router, Link } from 'react-router-dom'
 import AnimatedRoutes from './AnimatedRoutes';
 function Navbar() {
+
+    const sidebarFun = () => {
+        setSidebar(!sidebar)
+        return (
+            <div className={sidebar ? "sidebar active" : "sidebar"}>
+                <div className="Sidebar-link">
+                    <Link to="/"><button className='Home-sidebar'>Home</button></Link>
+                    <Link to="/About"><button className='About-sidebar'>About</button></Link>
+                    <Link to="/Contact"><button className='Contact-sidebar'>Contact-Us</button></Link>
+                    <Link to="/Portal"><button className='Portal-sidebar'>Portal</button></Link>
+                </div>
+
+                <div class="social-sidebar">
+                    <div className="insta-div"><a href='https://www.instagram.com'><h2><i className="fa-brands fa-instagram" id="instagram1"></i></h2></a></div>
+                    <div className="linked-div"><a href='https://www.linkedin.com'><h2><i className="fa-brands fa-linkedin" id="linkedin1"></i></h2></a></div>
+                    <div className="twitter-div"><a href='https://www.twitter.com'><h2><i className="fa-brands fa-twitter" id="twitter1"></i></h2></a></div>
+                </div>
+                {/* <div class="social-sidebar">
+                        <a href='https://www.instagram.com'><h2><i class="fa-brands fa-instagram" id="instagram"></i></h2></a>
+                        <a href='https://www.linkedin.com'><h2><i class="fa-brands fa-linkedin" id="linkedin"></i></h2></a>
+                        <a href='https://www.twitter.com'><h2><i class="fa-brands fa-twitter" id="twitter"></i></h2></a>
+            </div> */}
+            </div>
+        )
+    }
+
     const [mobile, setMobile] = useState(false);
     const [sidebar, setSidebar] = useState(false);
     useEffect(() => {
@@ -57,23 +83,24 @@ function Navbar() {
                         <div className='nav-main'>
                             <div className="nav1">
                                 {sidebar ? (
-                                    <button className="Close" onClick={() => {
+                                    <button className="Close" onClick={()=>
+                                    {
                                         setSidebar(!sidebar)
                                     }}><i className="fa-solid fa-xmark"></i></button>) : (
                                     <button onClick={() => {
-                                        setSidebar(!sidebar)
+                                        sidebarFun()
                                     }} className="bars"><i className="fa-solid fa-bars"></i></button>)}
                                 <div className="mobile-view"></div>
                             </div>
                         </div>
                     )}
                 </nav>
-                <div className={sidebar ? "sidebar active" : "sidebar"}>
+                <div className={sidebar?"sidebar active":"sidebar"}>
                     <div className="Sidebar-link">
                         <Link to="/"><button className='Home-sidebar'>Home</button></Link>
                         <Link to="/About"><button className='About-sidebar'>About</button></Link>
                         <Link to="/Contact"><button className='Contact-sidebar'>Contact-Us</button></Link>
-                        <Link to="/Portal"><button className='Portal-sidebar'>Customer-Portal</button></Link>
+                        <Link to="/Portal"><button className='Portal-sidebar'>Portal</button></Link>
                     </div>
 
                     <div class="social-sidebar">
@@ -85,10 +112,10 @@ function Navbar() {
                                 <a href='https://www.instagram.com'><h2><i class="fa-brands fa-instagram" id="instagram"></i></h2></a>
                                 <a href='https://www.linkedin.com'><h2><i class="fa-brands fa-linkedin" id="linkedin"></i></h2></a>
                                 <a href='https://www.twitter.com'><h2><i class="fa-brands fa-twitter" id="twitter"></i></h2></a>
-                    </div> */}
+                                </div>*/ }
                 </div>
                 <div></div>
-                <AnimatedRoutes />
+                <AnimatedRoutes sidebar={sidebar} />
             </Router>
         </div>
     )
