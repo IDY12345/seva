@@ -180,7 +180,7 @@
 {
     left: -30%;
     width: 70%;
-    height: 92vh;
+    height: 87vh;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -235,6 +235,14 @@
     color: white;
     border-radius: 20px;
 }
+
+.Pipes-side
+{
+    margin-top: 40.7%;
+    width:35%;
+    height: 87%;
+}
+
 @media screen and (max-width:1600px) {
     .Complete-Name
     {

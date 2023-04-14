@@ -73,7 +73,7 @@ function Navbar() {
                                 <input className="search" />
                             </div>
                             <div className="social">
-                                <a href='https://www.instagram.com'><h2><i className="fa-brands fa-instagram" id="instagram"></i></h2></a>
+                                <a href='https://www.instagram.com/seva.traders'><h2><i className="fa-brands fa-instagram" id="instagram"></i></h2></a>
                                 <a href='https://www.linkedin.com'><h2><i className="fa-brands fa-linkedin" id="linkedin"></i></h2></a>
                                 <a href='https://www.twitter.com'><h2><i className="fa-brands fa-twitter" id="twitter"></i></h2></a>
                             </div>
@@ -104,7 +104,7 @@ function Navbar() {
                     </div>
 
                     <div class="social-sidebar">
-                        <div className="insta-div"><a href='https://www.instagram.com'><h2><i className="fa-brands fa-instagram" id="instagram1"></i></h2></a></div>
+                        <div className="insta-div"><a href='https://www.instagram.com/seva.traders'><h2><i className="fa-brands fa-instagram" id="instagram1"></i></h2></a></div>
                         <div className="linked-div"><a href='https://www.linkedin.com'><h2><i className="fa-brands fa-linkedin" id="linkedin1"></i></h2></a></div>
                         <div className="twitter-div"><a href='https://www.twitter.com'><h2><i className="fa-brands fa-twitter" id="twitter1"></i></h2></a></div>
                     </div>
