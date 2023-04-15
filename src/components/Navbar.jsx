@@ -82,6 +82,7 @@ function Navbar() {
                     {mobile && (
                         <div className='nav-main'>
                             <div className="nav1">
+                                    
                                 {sidebar ? (
                                     <button className="Close" onClick={()=>
                                     {
@@ -90,6 +91,7 @@ function Navbar() {
                                     <button onClick={() => {
                                         sidebarFun()
                                     }} className="bars"><i className="fa-solid fa-bars"></i></button>)}
+                                    <img src='assets\sevalogo.png' className='logo-sidebar' alt="" />
                                 <div className="mobile-view"></div>
                             </div>
                         </div>

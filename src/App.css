@@ -294,6 +294,13 @@
   transition: 0.7s;
 }
 
+.logo-sidebar
+{
+  margin-top: 10px;
+  height: 40px;
+  margin-left: 40%;
+}
+
 @media screen and (768px<= width <=1600px) {
   .bars {
     display: none;
